@@ -1,0 +1,1916 @@
+{
+  "pages": [
+    {
+      "name": "BG",
+      "elements": [
+        {
+          "type": "boolean",
+          "name": "BG1",
+          "title": "Do you own a business?",
+          "hideNumber": true
+        },
+        {
+          "type": "boolean",
+          "name": "BG2",
+          "visibleIf": "{BG1} = true",
+          "title": "Are you the founder of the business?",
+          "hideNumber": true
+        },
+        {
+          "type": "text",
+          "name": "BG3",
+          "visibleIf": "{BG1} = true",
+          "title": "In what year was the business established?",
+          "hideNumber": true,
+          "isRequired": true,
+          "inputType": "number",
+          "min": "1950",
+          "max": "2020",
+          "maxLength": 2020,
+          "placeHolder": "e.g. 2010"
+        },
+        {
+          "type": "radiogroup",
+          "name": "BG4",
+          "visibleIf": "{BG1} = true",
+          "title": "How many employees does the business have, not including yourself?\"",
+          "choices": [
+            {
+              "value": "1-4 employees",
+              "text": "1-4"
+            },
+            {
+              "value": "5-19 employees",
+              "text": "5-19"
+            },
+            {
+              "value": "20-199 employees",
+              "text": "20-199"
+            },
+            {
+              "value": "over 200 employees",
+              "text": "200+"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "BG5",
+          "visibleIf": "{BG1} = true",
+          "title": "Where is your business (principally) located?",
+          "choices": [
+            {
+              "value": "QLD",
+              "text": "Queensland"
+            },
+            {
+              "value": "NSW",
+              "text": "New South Wales"
+            },
+            {
+              "value": "VIC",
+              "text": "Victoria"
+            },
+            {
+              "value": "WA",
+              "text": "Western Australia"
+            },
+            {
+              "value": "SA",
+              "text": "South Australia"
+            },
+            {
+              "value": "ACT",
+              "text": "Australian Capital Territory"
+            },
+            {
+              "value": "NT",
+              "text": "Northern Territory"
+            },
+            {
+              "value": "TAS",
+              "text": "Tasmania"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "BG6",
+          "visibleIf": "{BG1} = true",
+          "title": "What was the firm’s total net profit generated over the last 12 months?",
+          "choices": [
+            {
+              "value": "0 - 10,000",
+              "text": "0 - 10,000"
+            },
+            {
+              "value": "50,001 - 100,000",
+              "text": "50,001 - 100,000"
+            },
+            {
+              "value": "100,001 - 150,000",
+              "text": "100,001 - 150,000"
+            },
+            {
+              "value": "150,001 - 250,000",
+              "text": "150,001 - 250,000"
+            },
+            {
+              "value": "250,001 - 350,000",
+              "text": "250,001 - 350,000"
+            },
+            {
+              "value": "350,001 - 500,000",
+              "text": "350,001 - 500,000"
+            },
+            {
+              "value": "500,000+",
+              "text": "500,000+"
+            },
+            {
+              "value": "Not provided",
+              "text": "Prefer not to answer"
+            }
+          ]
+        },
+        {
+          "type": "dropdown",
+          "name": "BG7",
+          "visibleIf": "{BG1} = true",
+          "title": "What is the main industry in which the business generates revenue?",
+          "choices": [
+            {
+              "value": "Co-working Space",
+              "text": "Co-working Space"
+            },
+            {
+              "value": "Business Incubator",
+              "text": "Business Incubator"
+            },
+            {
+              "value": "Business Accelerator",
+              "text": "Business Accelerator"
+            },
+            {
+              "value": "Entrepreneurship Meeting Group",
+              "text": "Entrepreneurship Meeting Group"
+            },
+            {
+              "value": "Online Entrepreneurship Group",
+              "text": "Online Entrepreneurship Group"
+            },
+            {
+              "value": "Other Business Club",
+              "text": "Other Business Club"
+            },
+            {
+              "value": "None",
+              "text": "None of the above"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "BG8",
+          "visibleIf": "{BG1} = true",
+          "title": "How many previous businesses have you started?",
+          "choices": [
+            {
+              "value": "1",
+              "text": "1"
+            },
+            {
+              "value": "2",
+              "text": "2"
+            },
+            {
+              "value": "3+",
+              "text": "3+"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "BG9",
+          "title": "Do you belong to any of the following?",
+          "choices": [
+            {
+              "value": "Co-working Space",
+              "text": "Co-working Space"
+            },
+            {
+              "value": "Business Incubator",
+              "text": "Business Incubator"
+            },
+            {
+              "value": "Business Accelerator",
+              "text": "Business Accelerator"
+            },
+            {
+              "value": "Entrepreneurship Meeting Group",
+              "text": "Entrepreneurship Meeting Group"
+            },
+            {
+              "value": "Online Entrepreneurship Group",
+              "text": "Online Entrepreneurship Group"
+            },
+            {
+              "value": "Other Business Club",
+              "text": "Other Business Club"
+            },
+            {
+              "value": "None",
+              "text": "None of the above"
+            }
+          ]
+        },
+        {
+          "type": "radiogroup",
+          "name": "BG10",
+          "title": "What is the highest level of education you have attained?",
+          "choices": [
+            {
+              "value": "No formal education",
+              "text": "No formal education"
+            },
+            {
+              "value": "Primary School",
+              "text": "Primary School"
+            },
+            {
+              "value": "High School",
+              "text": "High School"
+            },
+            {
+              "value": "Certificate or undergraduate diploma level",
+              "text": "Certificate or undergraduate diploma level"
+            },
+            {
+              "value": "Bachelor degree (Undergraduate)",
+              "text": "Bachelor degree (Undergraduate)"
+            },
+            {
+              "value": "Postgraduate degree (including Masters)",
+              "text": "Postgraduate degree (including Masters)"
+            },
+            {
+              "value": "Doctoral Degree",
+              "text": "Doctoral Degree"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "name": "BG11",
+          "title": "Are you currently employed?"
+        }
+      ]
+    },
+    {
+      "name": "Motivation at Work",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "MAW",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "Intrins1",
+              "text": "Because I enjoy this work very much"
+            },
+            {
+              "value": "Intrins2",
+              "text": "Because I have fun doing my work"
+            },
+            {
+              "value": "Intrins3",
+              "text": "For moments of pleasure that this work brings me"
+            },
+            {
+              "value": "Ident1",
+              "text": "I chose this work because it allows me to reach my life goals"
+            },
+            {
+              "value": "Ident2",
+              "text": "Because this work fulfills my career plans"
+            },
+            {
+              "value": "Ident3",
+              "text": "Because this work fits my personal values"
+            },
+            {
+              "value": "Intro1",
+              "text": "Because I have to be the best in my work, I have to be a \"winner\""
+            },
+            {
+              "value": "Intro2",
+              "text": "Because my work is my life and I don't want to fail"
+            },
+            {
+              "value": "Intro3",
+              "text": "Because my reputation depends on it"
+            },
+            {
+              "value": "Ext1",
+              "text": "Because this work affords me a certain standard of living"
+            },
+            {
+              "value": "Ext2",
+              "text": "Because it allows me to make a lot of money"
+            },
+            {
+              "value": "Ext3",
+              "text": "I do this work for the paycheck"
+            }
+          ],
+          "isAllRowRequired": true
+        }
+      ],
+      "visibleIf": "{BG11} = true",
+      "description": "Why do you do the work you do?"
+    },
+    {
+      "name": "Motivation at Work 2",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "question1",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "Intrins1",
+              "text": "Because I enjoy this work very much"
+            },
+            {
+              "value": "Intrins2",
+              "text": "Because I have fun doing my work"
+            },
+            {
+              "value": "Intrins3",
+              "text": "For moments of pleasure that this work brings me"
+            },
+            {
+              "value": "Ident1",
+              "text": "I chose this work because it allows me to reach my life goals"
+            },
+            {
+              "value": "Ident2",
+              "text": "Because this work fulfills my career plans"
+            },
+            {
+              "value": "Ident3",
+              "text": "Because this work fits my personal values"
+            },
+            {
+              "value": "Intro1",
+              "text": "Because I have to be the best in my work, I have to be a \"winner\""
+            },
+            {
+              "value": "Intro2",
+              "text": "Because my work is my life and I don't want to fail"
+            },
+            {
+              "value": "Intro3",
+              "text": "Because my reputation depends on it"
+            },
+            {
+              "value": "Ext1",
+              "text": "Because this work affords me a certain standard of living"
+            },
+            {
+              "value": "Ext2",
+              "text": "Because it allows me to make a lot of money"
+            },
+            {
+              "value": "Ext3",
+              "text": "I do this work for the paycheck"
+            }
+          ],
+          "isAllRowRequired": true
+        }
+      ],
+      "visibleIf": "{BG11} = false",
+      "description": "Imagine the work you’d like to do owning your own business, why would you pursue that work?"
+    },
+    {
+      "name": "Entrepreneurial Passion",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "EP",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "Inv1",
+              "text": "It is exciting to figure out new ways to solve unmet market needs that can be commercialized. "
+            },
+            {
+              "value": "Inv2",
+              "text": "Searching for new ideas for products/services to offer is enjoyable to me. "
+            },
+            {
+              "value": "Inv3",
+              "text": "I am motivated to figure out how to make existing products/services better. "
+            },
+            {
+              "value": "Inv4",
+              "text": "Scanning the environment for new opportunities really excites me. "
+            },
+            {
+              "value": "inv5",
+              "text": "Inventing new solutions to problems is an important part of who I am. "
+            },
+            {
+              "value": "Fnd1",
+              "text": "Establishing a new company excites me. "
+            },
+            {
+              "value": "Fnd2",
+              "text": "Owning my own company energizes me. "
+            },
+            {
+              "value": "Fnd3",
+              "text": "Nurturing a new business through its emerging success is enjoyable. "
+            },
+            {
+              "value": "Fnd4",
+              "text": "Being the founder of a business is an important part of who I am. "
+            },
+            {
+              "value": "Dev1",
+              "text": "I really like finding the right people to market my product/service to. "
+            },
+            {
+              "value": "Dev2",
+              "text": "Assembling the right people to work for my business is exciting. "
+            },
+            {
+              "value": "Dev3",
+              "text": "Pushing my employees and myself to make our company better motivates me. "
+            },
+            {
+              "value": "Dev4",
+              "text": "Nurturing and growing companies is an important part of who I am. "
+            }
+          ]
+        }
+      ],
+      "description": "Answer the following questions based on how you believe they apply to you."
+    },
+    {
+      "name": "Passion Scale",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "PS",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "H1",
+              "text": "This activity allows me to live a variety of experiences. "
+            },
+            {
+              "value": "H2",
+              "text": "The new things that I discover with this activity allow me to appreciate it even more. "
+            },
+            {
+              "value": "H3",
+              "text": "This activity allows me to live memorable experiences. "
+            },
+            {
+              "value": "H4",
+              "text": "This activity reflects the qualities I like about myself. "
+            },
+            {
+              "value": "H5",
+              "text": "This activity is in harmony with the other activities in my life. "
+            },
+            {
+              "value": "H6",
+              "text": "For me it is a passion, that I still manage to control. "
+            },
+            {
+              "value": "H7",
+              "text": "I am completely taken with this activity. "
+            },
+            {
+              "value": "O8",
+              "text": "I cannot live without it."
+            },
+            {
+              "value": "O9",
+              "text": "The urge is so strong. I can’t help myself from doing this activity. "
+            },
+            {
+              "value": "O10",
+              "text": "I have difficulty imagining my life without this activity. "
+            },
+            {
+              "value": "O11",
+              "text": "I am emotionally dependent on this activity. "
+            },
+            {
+              "value": "O12",
+              "text": " I have a tough time controlling my need to do this activity. "
+            },
+            {
+              "value": "O13",
+              "text": "I have almost an obsessive feeling for this activity. "
+            },
+            {
+              "value": "O14",
+              "text": "My mood depends on me being able to do this activity. "
+            }
+          ]
+        }
+      ],
+      "description": "Work In Progress"
+    },
+    {
+      "name": "Individual Entrepreneurial Passion",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "IEP",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "Risk1",
+              "text": "I like to take bold action by venturing into the unknown"
+            },
+            {
+              "value": "Risk2",
+              "text": "I am willing to invest a lot of time and/or money on something that might yield a high return"
+            },
+            {
+              "value": "Risk3",
+              "text": "I tend to act “boldly” in situations where risk is involved"
+            },
+            {
+              "value": "Innov1",
+              "text": "I often like to try new and unusual activities that are not typical but not necessarily risky"
+            },
+            {
+              "value": "Innov2",
+              "text": "In general, I prefer a strong emphasis in projects on unique, one-of-a-kind approaches rather than revisiting tried and true approaches used before. "
+            },
+            {
+              "value": "Innov3",
+              "text": "I prefer to try my own unique way when learning new things rather than doing it like everyone else does"
+            },
+            {
+              "value": "Innov4",
+              "text": "I favor experimentation and original approaches to problem solving rather than using methods others generally use for solving their problems"
+            },
+            {
+              "value": "Proact1",
+              "text": "I usually act in anticipation of future problems, needs or changes "
+            },
+            {
+              "value": "Pract2",
+              "text": "I tend to plan ahead on projects"
+            },
+            {
+              "value": "Proact3",
+              "text": "I prefer to “step-up” and get things going on projects rather than sit and wait for someone else to do it"
+            }
+          ]
+        }
+      ],
+      "description": "Answer the following questions based on how you believe they apply to you."
+    },
+    {
+      "name": "Entrepreneurial Self-Efficacy",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "ESE",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Not Confident at all"
+            },
+            {
+              "value": "2",
+              "text": "Slightly Confident"
+            },
+            {
+              "value": "3",
+              "text": "Somewhat Confident"
+            },
+            {
+              "value": "4",
+              "text": "Fairly Confident"
+            },
+            {
+              "value": "5",
+              "text": "Completely Confident"
+            }
+          ],
+          "rows": [
+            {
+              "value": "S1",
+              "text": "Brainstorm (come up with) a new idea for a product or service "
+            },
+            {
+              "value": "S2",
+              "text": "Identify the need for a new product "
+            },
+            {
+              "value": "S3",
+              "text": "Design a product or service that will satisfy customer needs and wants "
+            },
+            {
+              "value": "P1",
+              "text": "Estimate customer demand for a new product or service "
+            },
+            {
+              "value": "P2",
+              "text": "Determine a competitive price for a new product or service"
+            },
+            {
+              "value": "P3",
+              "text": "Estimate the amount of start-up funds and working capital necessary to start my business "
+            },
+            {
+              "value": "P4",
+              "text": "Design an effective marketing/advertising campaign for a new product or service"
+            },
+            {
+              "value": "M1",
+              "text": "Get others to identify with and believe in my vision and plans for a new business"
+            },
+            {
+              "value": "M2",
+              "text": "Network — i.e., make contact with and exchange information with others"
+            },
+            {
+              "value": "M3",
+              "text": "Clearly and concisely explain verbally/in writing my business idea in everyday terms"
+            },
+            {
+              "value": "IP1",
+              "text": "Supervise employees"
+            },
+            {
+              "value": "IP2",
+              "text": "Recruit and hire employees"
+            },
+            {
+              "value": "IP3",
+              "text": "Delegate tasks and responsibilities to employees in my business"
+            },
+            {
+              "value": "IP4",
+              "text": "Deal effectively with day-to-day problems and crises"
+            },
+            {
+              "value": "IP5",
+              "text": "Inspire, encourage, and motivate my employees"
+            },
+            {
+              "value": "IP6",
+              "text": "Train employees"
+            },
+            {
+              "value": "IF1",
+              "text": "Organize and maintain the financial records of my business"
+            },
+            {
+              "value": "IF2",
+              "text": "Manage the financial assets of my business. "
+            },
+            {
+              "value": "IF3",
+              "text": "Read and interpret financial statements"
+            }
+          ]
+        }
+      ],
+      "description": "How much confidence do you have in your ability to:"
+    },
+    {
+      "name": "Attitude Toward Venturing & Nascent entrepreneurship",
+      "elements": [
+        {
+          "type": "radiogroup",
+          "name": "ATV",
+          "title": "In general, starting a business is:",
+          "choices": [
+            {
+              "value": "item1",
+              "text": "Worthless"
+            },
+            {
+              "value": "item2",
+              "text": "Worthwhile"
+            },
+            {
+              "value": "item3",
+              "text": "Disappointing"
+            },
+            {
+              "value": "item4",
+              "text": "Negative"
+            },
+            {
+              "value": "item5",
+              "text": "Positive"
+            }
+          ]
+        },
+        {
+          "type": "checkbox",
+          "name": "NE",
+          "title": "Have you participated in any of the following behaviors currently or in the past:",
+          "choices": [
+            {
+              "value": "item1",
+              "text": "Attending a “start your own business planning” seminar or conference"
+            },
+            {
+              "value": "item2",
+              "text": "Writing a business plan or participating in seminars that focus on writing a business plan"
+            },
+            {
+              "value": "item3",
+              "text": "Putting together a start-up team"
+            },
+            {
+              "value": "item4",
+              "text": "Looking for a building or equipment for the business"
+            },
+            {
+              "value": "item5",
+              "text": "Saving money to invest in the business"
+            },
+            {
+              "value": "item6",
+              "text": "Developing a product or service  "
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cognitive Flexibility",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "CF",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "I am good at \"sizing up\" situations. "
+            },
+            {
+              "value": "2",
+              "text": "I have a hard time making decisions when faced with difﬁcult situations. "
+            },
+            {
+              "value": "3",
+              "text": "I consider multiple options before making a decision. "
+            },
+            {
+              "value": "4",
+              "text": "When I encounter difﬁcult situations, I feel like I am losing control. "
+            },
+            {
+              "value": "5",
+              "text": "I like to look at difﬁcult situations from many different angles. "
+            },
+            {
+              "value": "6",
+              "text": "I seek additional information not immediately available before attributing causes to behavior. "
+            },
+            {
+              "value": "7",
+              "text": "When encountering difﬁcult situations, I become so stressed that I cannot think of a way to resolve the situation. "
+            },
+            {
+              "value": "8",
+              "text": "I try to think about things from another person’s point of view. "
+            },
+            {
+              "value": "9",
+              "text": "I ﬁnd it troublesome that there are so many different ways to deal with difﬁcult situations. "
+            },
+            {
+              "value": "10",
+              "text": "I am good at putting myself in others’ shoes. "
+            },
+            {
+              "value": "11",
+              "text": "When I encounter difﬁcult situations, I just don’t know what to do. "
+            },
+            {
+              "value": "12",
+              "text": "It is important to look at difﬁcult situations from many angles. "
+            },
+            {
+              "value": "13",
+              "text": "When in difﬁcult situations, I consider multiple options before deciding how to behave. "
+            },
+            {
+              "value": "14",
+              "text": "I often look at a situation from different viewpoints. "
+            },
+            {
+              "value": "15",
+              "text": "I am capable of overcoming the difﬁculties in life that I face. "
+            },
+            {
+              "value": "16",
+              "text": "I consider all the available facts and information when attributing causes to behavior. "
+            },
+            {
+              "value": "17",
+              "text": "I feel I have no power to change things in difﬁcult situations. "
+            },
+            {
+              "value": "18",
+              "text": "When I encounter difﬁcult situations, I stop and try to think of several ways to resolve it. "
+            },
+            {
+              "value": "19",
+              "text": "I can think of more than one way to resolve a difﬁcult situation I’m confronted with. "
+            },
+            {
+              "value": "20",
+              "text": "I consider multiple options before responding to difﬁcult situations. "
+            }
+          ]
+        }
+      ],
+      "description": "Please use the scale below to indicate the extent to which you agree or disagree with the following statements:"
+    },
+    {
+      "name": "Empathy",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "E",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Never"
+            },
+            {
+              "value": "2",
+              "text": "Rarely"
+            },
+            {
+              "value": "3",
+              "text": "Sometimes"
+            },
+            {
+              "value": "4",
+              "text": "Often"
+            },
+            {
+              "value": "5",
+              "text": "Always"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "When someone else is feeling excited, I tend to get excited too "
+            },
+            {
+              "value": "2",
+              "text": "Other people's misfortunes do not disturb me a great deal "
+            },
+            {
+              "value": "3",
+              "text": "It upsets me to see someone being treated disrespectfully "
+            },
+            {
+              "value": "4",
+              "text": "I remain unaffected when someone close to me is happy "
+            },
+            {
+              "value": "5",
+              "text": "I enjoy making other people feel better "
+            },
+            {
+              "value": "6",
+              "text": "I have tender, concerned feelings for people less fortunate than me "
+            },
+            {
+              "value": "7",
+              "text": "When a friend starts to talk about his\\her problems, I try to steer the conversation towards something else "
+            },
+            {
+              "value": "8",
+              "text": "I can tell when others are sad even when they do not say anything "
+            },
+            {
+              "value": "9",
+              "text": "I find that I am \"in tune\" with other people's moods "
+            },
+            {
+              "value": "10",
+              "text": "I do not feel sympathy for people who cause their own serious illnesses "
+            },
+            {
+              "value": "11",
+              "text": "I become irritated when someone cries "
+            },
+            {
+              "value": "12",
+              "text": "I am not really interested in how other people feel "
+            },
+            {
+              "value": "13",
+              "text": "I get a strong urge to help when I see someone who is upset "
+            },
+            {
+              "value": "14",
+              "text": "When I see someone being treated unfairly, I do not feel very much pity for them "
+            },
+            {
+              "value": "15",
+              "text": "I find it silly for people to cry out of happiness "
+            },
+            {
+              "value": "16",
+              "text": "When I see someone being taken advantage of, I feel kind of protective towards him\\her "
+            }
+          ]
+        }
+      ],
+      "description": "How likely are you to do the following:"
+    },
+    {
+      "name": "Need to Achieve",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "NTA",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "I try to excel at whatever I do. "
+            },
+            {
+              "value": "2",
+              "text": "It is important to me that I achieve at a high level. "
+            },
+            {
+              "value": "3",
+              "text": "It is not important to me to be the best "
+            },
+            {
+              "value": "4",
+              "text": "I want to be the best at what I do. "
+            },
+            {
+              "value": "5",
+              "text": "I'm driven by a desire to achieve significant goals. "
+            }
+          ]
+        }
+      ],
+      "description": "Answer the following questions based on how you believe they apply to you."
+    },
+    {
+      "name": "Grit",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "GRI",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": " Not like me at all"
+            },
+            {
+              "value": "2",
+              "text": "Not much like me"
+            },
+            {
+              "value": "3",
+              "text": "Somewhat like me"
+            },
+            {
+              "value": "4",
+              "text": "Mostly like me"
+            },
+            {
+              "value": "5",
+              "text": "Very much like me"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "New ideas and projects sometimes distract me from previous ones. "
+            },
+            {
+              "value": "2",
+              "text": "Setbacks don’t discourage me. I don’t give up easily. "
+            },
+            {
+              "value": "3",
+              "text": "I often set a goal but later choose to pursue a different one. "
+            },
+            {
+              "value": "4",
+              "text": "I am a hard worker. "
+            },
+            {
+              "value": "5",
+              "text": "I have difficulty maintaining my focus on projects that take more than a few months to complete. "
+            },
+            {
+              "value": "6",
+              "text": "I finish whatever I begin. "
+            },
+            {
+              "value": "7",
+              "text": "My interests change from year to year. "
+            },
+            {
+              "value": "8",
+              "text": "I am diligent. I never give up. "
+            },
+            {
+              "value": "9",
+              "text": "I have been obsessed with a certain idea or project for a short time but later lost interest. "
+            },
+            {
+              "value": "10",
+              "text": "I have overcome setbacks to conquer an important challenge. "
+            }
+          ]
+        }
+      ],
+      "description": "Answer the following questions based on how you believe they apply to you."
+    },
+    {
+      "name": "Growth Orientation",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "GO",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "I want a business to be as large as possible. "
+            },
+            {
+              "value": "2",
+              "text": " I want a size I can manage myself or with a few key employees"
+            },
+            {
+              "value": "3",
+              "text": "A business that would provide a good living, but with little risk of failure, and little likelihood of making you a millionaire "
+            },
+            {
+              "value": "4",
+              "text": "A business that was much more likely to make me a millionaire but had a higher chance of going bankrupt. "
+            }
+          ]
+        }
+      ],
+      "description": "If not already a business owner, please imagine, which best describes your preference for the future size of a business:"
+    },
+    {
+      "name": "Growth Mindset",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "GM",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "You have a certain amount of intelligence, and you can’t really do much to change it. "
+            },
+            {
+              "value": "2",
+              "text": "Your intelligence is something about you that you can’t change very much. "
+            },
+            {
+              "value": "3",
+              "text": "You can learn new things, but you can’t really change your basic intelligence. "
+            }
+          ]
+        }
+      ],
+      "description": "Answer the following questions based on how you believe they apply to you."
+    },
+    {
+      "name": "Tolerance for Ambiguity",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "TA",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "I don’t tolerate ambiguous situations very well. "
+            },
+            {
+              "value": "2",
+              "text": "I would rather avoid solving a problem that must be viewed from several different perspectives "
+            },
+            {
+              "value": "3",
+              "text": "I try to avoid situations that are ambiguous "
+            },
+            {
+              "value": "4",
+              "text": "I prefer familiar situations to new ones "
+            },
+            {
+              "value": "5",
+              "text": "Problems that cannot be considered from just one point of view are a little threatening "
+            },
+            {
+              "value": "6",
+              "text": "I avoid situations that are too complicated for me to easily understand "
+            },
+            {
+              "value": "7",
+              "text": "I am tolerant of ambiguous situations. "
+            },
+            {
+              "value": "8",
+              "text": "I enjoy tackling problems that are complex enough to be ambiguous. "
+            },
+            {
+              "value": "9",
+              "text": "I try to avoid problems that don’t seem to have only one “best” solution. "
+            },
+            {
+              "value": "10",
+              "text": "I generally prefer novelty over familiarity. "
+            },
+            {
+              "value": "11",
+              "text": "I dislike ambiguous situations "
+            },
+            {
+              "value": "12",
+              "text": "I find it hard to make a choice when the outcome is uncertain. "
+            },
+            {
+              "value": "13",
+              "text": "I prefer a situation in which there is some ambiguity. "
+            }
+          ]
+        }
+      ],
+      "description": "Answer the following questions based on how you believe they apply to you."
+    },
+    {
+      "name": "Resilience",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "RES",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "I am able to adapt when changes occur. "
+            },
+            {
+              "value": "2",
+              "text": "I can deal with whatever comes my way. "
+            },
+            {
+              "value": "3",
+              "text": "I try to see the humorous side of things when I am faced with problems. "
+            },
+            {
+              "value": "4",
+              "text": "Having to cope with stress can make me stronger. "
+            },
+            {
+              "value": "5",
+              "text": "I tend to bounce back after illness, injury or other hardships. "
+            },
+            {
+              "value": "6",
+              "text": "I believe I can achieve my goals, even if there are obstacles. "
+            },
+            {
+              "value": "7",
+              "text": "Under pressure, I stay focused and think clearly. "
+            },
+            {
+              "value": "8",
+              "text": "I am not easily discouraged by failure. "
+            },
+            {
+              "value": "9",
+              "text": "I think of myself as a strong person when dealing with life’s challenges and difficulties. "
+            },
+            {
+              "value": "10",
+              "text": "I am able to handle unpleasant or painful feelings like sadness, fear, and anger. "
+            }
+          ]
+        }
+      ],
+      "description": "Answer the following questions based on how you believe they apply to you."
+    },
+    {
+      "name": "Fear of Failure",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "FOF",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "F1",
+              "text": "of not getting enough funding to move the company forward "
+            },
+            {
+              "value": "F2",
+              "text": "of not being able to finance the business "
+            },
+            {
+              "value": "F3",
+              "text": "of not being able to get the required funding for the business "
+            },
+            {
+              "value": "PI1",
+              "text": "that no one will be interested in the product/service "
+            },
+            {
+              "value": "PI2",
+              "text": "that this is not a valuable business idea "
+            },
+            {
+              "value": "PI3",
+              "text": "that there is no need for our product/service out there "
+            },
+            {
+              "value": "TSE1",
+              "text": "of other people's expectations of me "
+            },
+            {
+              "value": "TSE2",
+              "text": "of disappointing the people who are important to me "
+            },
+            {
+              "value": "TSE3",
+              "text": "of losing the trust of people who are important to me "
+            },
+            {
+              "value": "OC1",
+              "text": "that running the business is taking my time away from other activities "
+            },
+            {
+              "value": "OC2",
+              "text": "of missing important events of my life because of my business "
+            },
+            {
+              "value": "OC3",
+              "text": "of not being able to spend enough time with my family and friends "
+            },
+            {
+              "value": "PA1",
+              "text": "of not being able to manage people effectively "
+            },
+            {
+              "value": "PA2",
+              "text": "of not being able to manage the business effectively "
+            },
+            {
+              "value": "PA3",
+              "text": "of not being able to fulfil all the roles that this job requires "
+            },
+            {
+              "value": "PS1",
+              "text": "of running out of money "
+            },
+            {
+              "value": "PS2",
+              "text": "of losing all my savings "
+            },
+            {
+              "value": "PS3",
+              "text": "of losing all I have invested in the business/business activities "
+            },
+            {
+              "value": "VE1",
+              "text": "meet client expectations "
+            },
+            {
+              "value": "VE2",
+              "text": "overcome technical challenges "
+            },
+            {
+              "value": "VE3",
+              "text": "deliver upon promises "
+            }
+          ]
+        }
+      ],
+      "description": "Over the past few months, I have been afraid…"
+    },
+    {
+      "name": "Imposter Syndrome",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "IS",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "I have often succeeded on a test or task even though I was afraid that I would not do well before I undertook the task. "
+            },
+            {
+              "value": "2",
+              "text": "I can give the impression that I’m more competent than I really am. "
+            },
+            {
+              "value": "3",
+              "text": "I avoid evaluations if possible and have a dread of others evaluating me. "
+            },
+            {
+              "value": "4",
+              "text": "When people praise me for something I’ve accomplished, I’m afraid I won’t be able to live up to their expectations of me in the future. "
+            },
+            {
+              "value": "5",
+              "text": "I sometimes think I obtained my present position or gained my present success because I happened to be in the right place at the right time or knew the right people. "
+            },
+            {
+              "value": "6",
+              "text": "I’m afraid people important to me may find out that I’m not as capable as they think I am. "
+            },
+            {
+              "value": "7",
+              "text": "I tend to remember the incidents in which I have not done my best more than those times I have done my best. "
+            },
+            {
+              "value": "8",
+              "text": "I rarely do a project or task as well as I’d like to do it. "
+            },
+            {
+              "value": "9",
+              "text": "Sometimes I feel or believe that my success in my life or in my job has been the result of some kind of error. "
+            },
+            {
+              "value": "10",
+              "text": "It’s hard for me to accept compliments or praise about my intelligence or accomplishments. "
+            },
+            {
+              "value": "11",
+              "text": "At times, I feel my success has been due to some kind of luck. "
+            },
+            {
+              "value": "12",
+              "text": "I’m disappointed at times in my present accomplishments and think I should have accomplished much more. "
+            },
+            {
+              "value": "13",
+              "text": "Sometimes I’m afraid others will discover how much knowledge or ability I really lack. "
+            },
+            {
+              "value": "14",
+              "text": "I’m often afraid that I may fail at a new assignment or undertaking even though I generally do well at what I attempt. "
+            },
+            {
+              "value": "15",
+              "text": "When I’ve succeeded at something and received recognition for my accomplishments, I have doubts that I can keep repeating that success. "
+            },
+            {
+              "value": "16",
+              "text": "If I receive a great deal of praise and recognition for something I’ve accomplished, I tend to discount the importance of what I’ve done. "
+            },
+            {
+              "value": "17",
+              "text": "I often compare my ability to those around me and think they may be more intelligent than I am. "
+            },
+            {
+              "value": "18",
+              "text": "I often worry about not succeeding with a project or examination, even though others around me have considerable confidence that I will do well. "
+            },
+            {
+              "value": "19",
+              "text": "If I’m going to receive a promotion or gain recognition of some kind, I hesitate to tell others until it is an accomplished fact. "
+            },
+            {
+              "value": "20",
+              "text": "I feel bad and discouraged if I’m not “the best” or at least “very special” in situations that involve achievement. "
+            }
+          ]
+        }
+      ],
+      "description": "Answer the following questions based on how you believe they apply to you."
+    },
+    {
+      "name": "The Big 5",
+      "elements": [
+        {
+          "type": "matrix",
+          "name": "TB5",
+          "titleLocation": "hidden",
+          "columns": [
+            {
+              "value": "1",
+              "text": "Strongly Disagree"
+            },
+            {
+              "value": "2",
+              "text": "Disagree"
+            },
+            {
+              "value": "3",
+              "text": "Neutral"
+            },
+            {
+              "value": "4",
+              "text": "Agree"
+            },
+            {
+              "value": "5",
+              "text": "Strongly Agree"
+            }
+          ],
+          "rows": [
+            {
+              "value": "1",
+              "text": "Is talkative "
+            },
+            {
+              "value": "2",
+              "text": "Tends to find fault with others "
+            },
+            {
+              "value": "3",
+              "text": "Does a thorough job "
+            },
+            {
+              "value": "4",
+              "text": "Is depressed, blue "
+            },
+            {
+              "value": "5",
+              "text": "Is original, comes up with new ideas "
+            },
+            {
+              "value": "6",
+              "text": "Is reserved "
+            },
+            {
+              "value": "7",
+              "text": "Is helpful and unselfish with others "
+            },
+            {
+              "value": "8",
+              "text": "Can be somewhat careless "
+            },
+            {
+              "value": "9",
+              "text": "Is relaxed, handles stress well "
+            },
+            {
+              "value": "10",
+              "text": "Is curious about many different things "
+            },
+            {
+              "value": "11",
+              "text": "Is full of energy "
+            },
+            {
+              "value": "12",
+              "text": "Starts quarrels with others "
+            },
+            {
+              "value": "13",
+              "text": "Is a reliable worker "
+            },
+            {
+              "value": "14",
+              "text": "Can be tense "
+            },
+            {
+              "value": "15",
+              "text": "Is ingenious, a deep thinker "
+            },
+            {
+              "value": "16",
+              "text": "Generates a lot of enthusiasm "
+            },
+            {
+              "value": "17",
+              "text": "Has a forgiving nature "
+            },
+            {
+              "value": "18",
+              "text": "Tends to be disorganized "
+            },
+            {
+              "value": "19",
+              "text": "Worries a lot "
+            },
+            {
+              "value": "20",
+              "text": "Has an active imagination "
+            },
+            {
+              "value": "21",
+              "text": "Tends to be quiet "
+            },
+            {
+              "value": "22",
+              "text": "Is generally trusting "
+            },
+            {
+              "value": "23",
+              "text": "Tends to be lazy "
+            },
+            {
+              "value": "24",
+              "text": "Is emotionally stable, not easily upset "
+            },
+            {
+              "value": "25",
+              "text": "Is inventive "
+            },
+            {
+              "value": "26",
+              "text": "Has an assertive personality "
+            },
+            {
+              "value": "27",
+              "text": "Can be cold and aloof "
+            },
+            {
+              "value": "28",
+              "text": "Perseveres until the task is finished "
+            },
+            {
+              "value": "29",
+              "text": "Can be moody "
+            },
+            {
+              "value": "30",
+              "text": "Values artistic, aesthetic experiences "
+            },
+            {
+              "value": "31",
+              "text": "Is sometimes shy, inhibited "
+            },
+            {
+              "value": "32",
+              "text": "Is considerate and kind to almost everyone "
+            },
+            {
+              "value": "33",
+              "text": "Does things efficiently "
+            },
+            {
+              "value": "34",
+              "text": "Remains calm in tense situations "
+            },
+            {
+              "value": "35",
+              "text": "Prefers work that is routine "
+            },
+            {
+              "value": "36",
+              "text": "Is outgoing, sociable "
+            },
+            {
+              "value": "37",
+              "text": "Is sometimes rude to others "
+            },
+            {
+              "value": "38",
+              "text": "Makes plans and follows through with them "
+            },
+            {
+              "value": "39",
+              "text": "Gets nervous easily "
+            },
+            {
+              "value": "40",
+              "text": "Likes to reflect, play with ideas "
+            },
+            {
+              "value": "41",
+              "text": "Has few artistic interests "
+            },
+            {
+              "value": "42",
+              "text": "Likes to cooperate with others "
+            },
+            {
+              "value": "43",
+              "text": "Is easily distracted "
+            },
+            {
+              "value": "44",
+              "text": "Is sophisticated in art, music, or literature "
+            }
+          ]
+        }
+      ],
+      "description": "I see myself as someone who..."
+    }
+  ]
+}
